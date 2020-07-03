@@ -39,7 +39,7 @@ a {
 }
 
 header {
-	font-weight: 350;
+	font-weight: 300;
 	font-size: 20px;
 	margin: 1em;
 	height: 18em;
@@ -307,7 +307,10 @@ section {
 }
 
 .add_training {
-	margin: 3em;
+	margin: 1em;
+	@include ipad {
+		margin: 3em;
+	}
 
 	> div {
 		margin-bottom: 4rem;
@@ -338,27 +341,33 @@ section {
 
 .language {
 	.carrousel {
-		display: flex;
+		display: block;
 		margin: 30px auto;
 
 		@include ipad {
 			width: 550px;
+			display: flex;
+			
 		}
 	}
 
 	.lang {
-		width: 180px;
-		height: 300px;
+		width: 150px;
+		height: 250px;
 		border-radius: 10px;
 		box-shadow: -1rem 0 3rem #000;
-		transition: 0.4s ease-out;
+		transition: none;
 		background-color: color(light);
 		color: color(primary);
 		padding: 30px;
 		left: 0;
+		margin:2em auto;
 
 		@include ipad {
 			width: 210px;
+			height: 300px;
+			transition: 0.4s ease-out;
+			margin:0;
 		}
 
 		img {
@@ -370,18 +379,29 @@ section {
 	}
 
 	.lang:not(:first-child) {
-		margin-left: -145px;
+	
+		@include ipad {
+			margin-left: -145px;
+		}
 	}
 
 	.lang:hover {
-		transform: translateY(-20px);
-		transition: 0.4s ease-out;
+		transform: none;
+		
+		@include ipad {
+			transform: translateY(-20px);
+			transition: 0.4s ease-out;
+		}
 	}
 
 	.lang:hover ~ .lang {
-		position: relative;
-		left: 120px;
-		transition: 0.4s ease-out;
+
+		@include ipad {
+			position: relative;
+			left: 120px;
+			transition: 0.4s ease-out;
+		}
+		
 	}
 }
 
@@ -409,7 +429,7 @@ section {
 			}
 
 			.computer_skill {
-				font-weight: 350;
+				font-weight: 300;
 				letter-spacing: 0.35em;
 			}
 		}
@@ -451,7 +471,7 @@ section {
 			text-align: left;
 		}
 		p{
-			font-weight: 350;
+			font-weight: 300;
 		}
 
 	}

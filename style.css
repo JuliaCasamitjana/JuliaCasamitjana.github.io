@@ -14,7 +14,7 @@ a {
 }
 
 header {
-  font-weight: 350;
+  font-weight: 300;
   font-size: 20px;
   margin: 1em;
   height: 18em;
@@ -328,7 +328,13 @@ section {
 }
 
 .add_training {
-  margin: 3em;
+  margin: 1em;
+}
+
+@media (min-width: 600px) {
+  .add_training {
+    margin: 3em;
+  }
 }
 
 .add_training > div {
@@ -368,35 +374,41 @@ section {
 }
 
 .language .carrousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin: 30px auto;
 }
 
 @media (min-width: 600px) {
   .language .carrousel {
     width: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 .language .lang {
-  width: 180px;
-  height: 300px;
+  width: 150px;
+  height: 250px;
   border-radius: 10px;
   -webkit-box-shadow: -1rem 0 3rem #000;
           box-shadow: -1rem 0 3rem #000;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
+  -webkit-transition: none;
+  transition: none;
   background-color: #f7e1d7;
   color: #0e0c38;
   padding: 30px;
   left: 0;
+  margin: 2em auto;
 }
 
 @media (min-width: 600px) {
   .language .lang {
     width: 210px;
+    height: 300px;
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+    margin: 0;
   }
 }
 
@@ -408,22 +420,33 @@ section {
   border: 0.5px solid #0e0c38;
 }
 
-.language .lang:not(:first-child) {
-  margin-left: -145px;
+@media (min-width: 600px) {
+  .language .lang:not(:first-child) {
+    margin-left: -145px;
+  }
 }
 
 .language .lang:hover {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
+  -webkit-transform: none;
+          transform: none;
 }
 
-.language .lang:hover ~ .lang {
-  position: relative;
-  left: 120px;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
+@media (min-width: 600px) {
+  .language .lang:hover {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+  }
+}
+
+@media (min-width: 600px) {
+  .language .lang:hover ~ .lang {
+    position: relative;
+    left: 120px;
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+  }
 }
 
 .computer .grid {
@@ -462,7 +485,7 @@ section {
 }
 
 .computer .grid div .computer_skill {
-  font-weight: 350;
+  font-weight: 300;
   letter-spacing: 0.35em;
 }
 
@@ -513,7 +536,7 @@ section {
 }
 
 .portfolio .info_web p {
-  font-weight: 350;
+  font-weight: 300;
 }
 
 .portfolio .overlay {
