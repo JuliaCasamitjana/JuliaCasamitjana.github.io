@@ -4,7 +4,8 @@
 		<meta CHARSET="UTF-8">
 		<meta name="robots" content="noindex" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Sonsie+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<script src="https://kit.fontawesome.com/973513fb18.js" crossorigin="anonymous"></script>
 		<link rel="icon" type="image/png" href="img/favicon.png"/>
 		<title> CV - Julia Casamitjana </title>
@@ -25,7 +26,7 @@
 				</nav>
 				<div class="info">
 					<div>
-						<h1>Julia <br>Casamitjana</h1>
+						<h1>Júlia <br>Casamitjana</h1>
 						<p id="email"></p>
 						<a href="https://www.linkedin.com/in/juliacasamitjana" target="_blank" ><img class="icon" src="img/linkedin.png" alt="Linkedin"></a>
 						<a href="https://github.com/JuliaCasamitjana" target="_blank"><img class="icon" src="img/github.png" alt="GitHub"></a>
@@ -59,7 +60,7 @@
 			<section class="education edu_exp center" id="edu">
 				<h2>Education</h2>
 				<p class="date" id="line_down">Sept. 2008 - June 2013</p>
-				<div>
+				<div data-aos="fade-left">
 					<h3>Master's degree in Industrial Engineering</h3>
 					<div class="direction">
 						<a href="https://etseib.upc.edu/" target="_blank"><img src="img/etseib.png" alt="etseib"></a>
@@ -70,7 +71,7 @@
 					<p>Calculus, Algebra, Physics, Computing and Programming, Materials Science, Thermodynamics, Mechanics, Fluid Dynamics, Electronic Circuits, Heat and Mass Transfer, Automatic Control, Theory of Structures, Industridsal Organization and Business Administration.</p>
 				</div>
 				<p class="date" id="line_up">Sept. 2013 - Sept. 2014</p>
-				<div>
+				<div data-aos="fade-left">
 					<h3>Master’s in Innovation Management and Industrial Design</h3>
 					<div class="direction">
 						<a href="https://www.ensgsi.univ-lorraine.fr/" target="_blank"><img src="img/ensgsi.png" alt="engsi"></a>
@@ -81,48 +82,50 @@
 					<p>Technical Creativity for Product Conception, Innovation Marketing, Need Analysis, Value Engineering and Project Management.</p>
 				</div>
 			</section>
-			<section class="language center" id="edu">
-				<h2>Additional training</h2>
-				<div  class="add_training">
-					<h3>Web Design for Everybody: Basics of Web Development & Coding Specialization </h3>
-					<div>
-						<div class="training_school">
-							<a class="training_img"href="https://www.coursera.org/specializations/web-design" target="_blank"><img src="img/coursera.png" alt="coursera"></a>
-							<p>Coursera<br>by University of Michigan</p>
+			<section class="white_section pattern_training">
+				<div class="center">
+					<h2>Additional training</h2>
+					<div class="add_training">
+						<h3>Web Design for Everybody: Basics of Web Development & Coding Specialization </h3>
+						<div data-aos="flip-down">
+							<div class="training_school">
+								<a class="training_img"href="https://www.coursera.org/specializations/web-design" target="_blank"><img src="img/coursera.png" alt="coursera"></a>
+								<p>Coursera<br>by University of Michigan</p>
+							</div>
+							<p class="training_info">Introduction to HTML5, introduction to CSS3, advanced styling with responsive design and interactivity with JavaScript</p>
 						</div>
-						<p class="training_info">Introduction to HTML5, introduction to CSS3, advanced styling with responsive design and interactivity with JavaScript</p>
-					</div>
-					<h3>JavaScript and the DOM</h3>
-					<div>
-						<div class="training_school">
-							<a href="https://www.udacity.com/course/javascript-and-the-dom--ud117" target="_blank"><img src="img/udacity.png" alt="udacity"></a>
-							<p class="training_site">Udacity<br>by Richard Kalehoff</p>
+						<h3>JavaScript and the DOM</h3>
+						<div data-aos="flip-down">
+							<div class="training_school">
+								<a href="https://www.udacity.com/course/javascript-and-the-dom--ud117" target="_blank"><img src="img/udacity.png" alt="udacity"></a>
+								<p class="training_site">Udacity<br>by Richard Kalehoff</p>
+							</div>
+							<p class="training_info">The Document Object Model, creating content with JavaScript, working with Browser Events and Performance.</p>
 						</div>
-						<p class="training_info">The Document Object Model, creating content with JavaScript, working with Browser Events and Performance.</p>
-					</div>
-					<h3>JavaScript Design Patterns</h3>
-					<div>
-						<div class="training_school">
-							<a href="https://www.udacity.com/course/javascript-design-patterns--ud989" target="_blank"><img src="img/udacity.png" alt="udacity"></a>
-							<p>Udacity<br>by Ben Jaffe</p>
+						<h3>JavaScript Design Patterns</h3>
+						<div data-aos="flip-down">
+							<div class="training_school">
+								<a href="https://www.udacity.com/course/javascript-design-patterns--ud989" target="_blank"><img src="img/udacity.png" alt="udacity"></a>
+								<p>Udacity<br>by Ben Jaffe</p>
+							</div>
+							<p class="training_info">The importance of code organization and how to implement it with either vanilla JavaScript or an organizational library or framework</p>
 						</div>
-						<p class="training_info">The importance of code organization and how to implement it with either vanilla JavaScript or an organizational library or framework</p>
-					</div>
-					<h3>The Complete React Developer Course (w/ Hooks and Redux) </h3>
-					<div>
-						<div class="training_school"> 
-							<a href="https://www.udemy.com/course/react-2nd-edition/" target="_blank"><img src="img/udemy.png" alt="udemy"></a>
-							<p>Udemy<br>by Andrew Mead</p>
+						<h3>The Complete React Developer Course (w/ Hooks and Redux) </h3>
+						<div data-aos="flip-down">
+							<div class="training_school"> 
+								<a href="https://www.udemy.com/course/react-2nd-edition/" target="_blank"><img src="img/udemy.png" alt="udemy"></a>
+								<p>Udemy<br>by Andrew Mead</p>
+							</div>
+							<p class="training_info">Building, testing (Jest), and launching React applications, use of cutting-edge ES6/ES7 JavaScript, Redux, React-Router, setting up authentication and user accounts and deployment.</p>
 						</div>
-						<p class="training_info">Building, testing (Jest), and launching React applications, use of cutting-edge ES6/ES7 JavaScript, Redux, React-Router, setting up authentication and user accounts and deployment.</p>
-					</div>
-					<h3>The Complete Node.js Developer Course (3rd Edition)</h3>
-					<div>
-						<div class="training_school">
-							<a href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/" target="_blank"><img src="img/udemy.png" alt="udemy"></a>
-							<p>Udemy<br>by Andrew Mead</p>
+						<h3>The Complete Node.js Developer Course (3rd Edition)</h3>
+						<div data-aos="flip-down">
+							<div class="training_school">
+								<a href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/" target="_blank"><img src="img/udemy.png" alt="udemy"></a>
+								<p>Udemy<br>by Andrew Mead</p>
+							</div>
+							<p class="training_info">Building, testing, and launching Node applications, creation of Express web servers and APIs, data storing with Mongoose and MongoDB and deployment to production.</p>
 						</div>
-						<p class="training_info">Building, testing, and launching Node applications, creation of Express web servers and APIs, data storing with Mongoose and MongoDB and deployment to production.</p>
 					</div>
 				</div>
 			</section>
@@ -130,19 +133,19 @@
 				<div class="center edu_exp">
 				<h2>Professional experience</h2>
 				<p class="date" id="line_down">Aug. 2015 - Mar 2016</p>
-				<div>
+				<div data-aos="fade-left">
 					<h3>Product Engineer</h3>
 					<div class="direction">
 						<a href="https://www.konux.com/" target="_blank"><img src="img/konux.jpg" alt="konux"></a>
 						<p>KONUX GmbH<br>
-						Flößergasse 2, 81369 München (Germany)</p>
+						Flößergasse 2, 81369 München, Germany</p>
 					</div>
 
 					<h4>Main duties</h4>
 					<p>Execution of hazard analysis, FMEA and documentation of development processes. Planning, organization and execution of development projects from concept to prototype. Establishing 3D Data and drawings using SOLIDWORS. Testing design concepts concerning the implementation of a torque sensor.</p>
 				</div>
 				<p class="date" id="line_up">Sept. 2016 - Sept. 2019</p>
-				<div>
+				<div data-aos="fade-left">
 					<h3>Territory Technical Manager</h3>
 					<div class="direction">
 						<a href="https://www.3ds.com/" target="_blank"><img src="img/dassault.png" alt="dassault"></a>
@@ -186,32 +189,32 @@
 				<div class="center">
 				<h2 center>Computer Skills</h2>
 				<div class="grid">
-					<div>
+					<div data-aos="zoom-out-up">
 						<img src="img/sw.png" alt="solidworks">
 						<p class="computer_skill">SOLIDWORKS</p>
 						<p>Advanced user of SOLIDWORKS software and other SOLIDWORKS portfolio programs such as Visualize. </p>
 					</div>
-					<div>
+					<div data-aos="zoom-out-up">
 						<img src="img/engsoft.png" alt="Engineering softwares">
 						<p class="computer_skill">ENGINEERING SOFTWARES</p>
 						<p>I have worked with AutoCad, Ansys and Matlab</p>
 					</div>
-					<div>
+					<div data-aos="zoom-out-up">
 						<img src="img/webdesign.png" alt="Web Design">
 						<p class="computer_skill">WEB DEVELOPMENT</p>
 						<p>I have design several websites using HTML, CSS, SCSS and JavaScript and small apps using React and Nodejs.</p>
 					</div>
-					<div>
+					<div data-aos="zoom-out-up">
 						<img src="img/c.png" alt="C Language">
 						<p class="computer_skill">C++ LANGUAGE</p>
 						<p>I have programming experience with C++ Language</p>
 					</div>
-					<div>
+					<div data-aos="zoom-out-up">
 						<img src="img/editors.png" alt="Video Editors">
 						<p class="computer_skill">VIDEO EDITORS</p>
 						<p>I have worked with video editors such as Camtasia and Final Cut Pro.</p>
 					</div>
-					<div>
+					<div data-aos="zoom-out-up">
 						<img src="img/office.png" alt="Office">
 						<p class="computer_skill">OFFICE PACKAGE</p>
 						<p>User of the Microsoft Office package including Word, Excel and PowerPoint.</p>
@@ -281,6 +284,10 @@
 			var hostname = "gmail.com";
 			var linktext = username + "@" + hostname ;
 			document.getElementById("email").innerHTML="<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>";
+		</script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
 		</script>
 
 	</body>

@@ -1,6 +1,6 @@
 $colors: (
 	primary: #0e0c38,
-	accent: #fe0613,
+	accent: #eb1621,
 	light: #f7e1d7
 );
 
@@ -38,11 +38,19 @@ a {
 	color: inherit;
 }
 
+h2{
+	font-family: 'Sonsie One';
+}
+
 header {
 	font-weight: 300;
 	font-size: 20px;
-	margin: 1em;
+	padding: 1em;
 	height: 18em;
+	background-image: url("/assets/pattern_chip.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+
 	@include ipad {
 		height: 22em;
 	}
@@ -96,6 +104,12 @@ header {
 		}
 		h1 {
 			margin-bottom: 0;
+			font-family: 'Sonsie One', cursive;
+			font-size: 2rem;
+			@include ipad {
+				font-size: 3rem;
+			}
+			
 		}
 		div {
 			position: absolute;
@@ -131,8 +145,8 @@ header {
 }
 
 section {
-	padding: 1em;
-	line-height: 1.5em;
+	padding: 2em;
+	line-height: 1.7em;
 	position: relative;
 }
 
@@ -150,6 +164,9 @@ section {
 
 .aboutme {
 	padding-bottom: 4em;
+	// background-image: url("/assets/pattern_white.jpg");
+	background-size: 100%;
+	background-blend-mode: luminosity;
 
 	.text_am {
 		@include ipad {
@@ -299,15 +316,25 @@ section {
 	border-right: 100px solid transparent;
 	left: 50%;
 	transform: translate(-50%, 0%);
-	border-top: 20px solid color(primary);
+	border-top: 20px solid rgb(241, 241, 241);
 }
 
 .education:before {
 	border-top: 20px solid white;
 }
+.pattern_training{
+	background-image: url("/assets/pattern_chip2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 
+}
 .add_training {
 	margin: 1em;
+
+	h3{
+		text-align: center;
+	}
+
 	@include ipad {
 		margin: 3em;
 	}
@@ -353,11 +380,12 @@ section {
 
 	.lang {
 		width: 150px;
-		height: 250px;
-		border-radius: 10px;
+		height: 275px;
+		border-radius: 5px;
 		box-shadow: -1rem 0 3rem #000;
 		transition: none;
-		background-color: color(light);
+		background-color: rgb(241, 241, 241);
+		background-image: url("/assets/pattern_chip2.png");
 		color: color(primary);
 		padding: 30px;
 		left: 0;
